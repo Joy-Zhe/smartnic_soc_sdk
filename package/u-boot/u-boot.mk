@@ -24,7 +24,7 @@ ifeq ($(SNIC_UBOOT_LATEST),y)
 else
 
 ifeq ($(SNIC_NXP), y)
-u-boot_REPO:=https://source.codeaurora.org/external/qoriq/qoriq-components
+u-boot_REPO:=https://github.com/nxp-qoriq
 
 ifneq ($(QORIQ_TAG),)
 u-boot_CHECKOUT:=$(QORIQ_TAG)

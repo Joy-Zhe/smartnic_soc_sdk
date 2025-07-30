@@ -11,7 +11,7 @@ QORIQ_BUILD:=$(QORIQ_RES)/$(QORIQ_TAG)
 QORIQ_CONFDIR=$(PACKAGEDIR)/firmware/nxp
 SDK_VER_BIN=$(sdk_version_BUILDDIR)/version.bin
 
-QORIQ_REPO=https://source.codeaurora.org/external/qoriq/qoriq-components
+QORIQ_REPO=https://github.com/nxp-qoriq
 NXP_GITHUB_REPO=https://github.com/nxp
 
 REPOS:=
@@ -20,7 +20,7 @@ ifeq ($(SNIC_FIRMWARE_QORIQ_RCW),y)
 REPOS+=rcw
 
 rcw_REPO_GIT=y
-rcw_REPO=https://source.codeaurora.org/external/qoriq/qoriq-components
+rcw_REPO=https://github.com/nxp-qoriq
 rcw_REPO_NAME=rcw
 
 rcw_VER:=$(QORIQ_TAG)
